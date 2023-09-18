@@ -1,0 +1,36 @@
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="banner" class="nav-link">Banner</a>
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="create-employee" class="nav-link">Create Employee</a>
+    </li>
+
+    <li class="nav-item">
+      <a href="{{ source_link }}" class="nav-link">Source</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1 class="text-center">{{title}}-<sub>{{subTitle}}</sub></h1>
+  <div class="alert alert-primary" role="alert">
+    <strong>Warning!</strong>
+    <a href="#" class="alert-link">Click Here</a>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+
+<footer class="footer text-center">
+  <div class="container">
+    <span>all copyright reserved 2023 euewrqe</span>
+  </div>
+</footer>
